@@ -1,0 +1,154 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  width: 80%;
+  height: 50%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 200px 200px;
+  gap: 15px;
+}
+
+.intro {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.worker {
+  height: 275px;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.worker-photo {
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.worker-photo+div {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.worker-name {
+  font-weight: 300;
+  margin: 0px;
+  line-height: 1.2;
+}
+
+.report-tabs {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  gap: 20px;
+}
+
+button {
+  background-color: hsl(235, 46%, 20%);
+  color: hsl(236, 100%, 87%);
+  border: none;
+  text-align: left;
+  font-weight: 300;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
+.report-tabs .active {
+  color: white;
+}
+
+
+
+
+/*Cards styling*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
+  gap: 15px;
+}
+
+.report-card {
+  position: relative;
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 10.6px;
+}
+
+.card-icon {
+  position: absolute;
+  top: -5px;
+  left: 140px;
+  height: 50px;
+  width: 50px;
+
+}
+
+.card-details {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 170px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+.card-details div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-menu {
+  transform: scale(0.8);
+}
+
+.current-time {
+  font-weight: 300;
+  margin: 0px;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+.previous-time {
+  font-weight: 400;
+  font-size: 11px;
+}
