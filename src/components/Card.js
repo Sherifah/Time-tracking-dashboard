@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
   return (
-    <div className='report-card'>
-        <img src='/images/icon-work.svg' className='card-icon'/>
+    <div className='report-card' style={{"backgroundColor": `${props.color}`}}>
+        <img src={props.icon} className='card-icon'/>
         <div className='card-details'>
             <div>
                 <p className='card-title'>Work</p>

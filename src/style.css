@@ -101,17 +101,16 @@ button:hover {
 
 .report-card {
   position: relative;
-  background-color: hsl(15, 100%, 70%);
-  border-radius: 10.6px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card-icon {
   position: absolute;
   top: -5px;
   left: 140px;
-  height: 50px;
-  width: 50px;
-
+  height: 48px;
+  width: 48px;
 }
 
 .card-details {
@@ -123,6 +122,11 @@ button:hover {
   border-radius: 10px;
   padding: 12px 20px;
 }
+
+.card-details:hover {
+  background-color: hsl(236, 44%, 24%);
+}
+
 
 .card-details div {
   display: flex;
@@ -140,6 +144,7 @@ button:hover {
 .card-menu {
   transform: scale(0.8);
 }
+
 
 .current-time {
   font-weight: 300;

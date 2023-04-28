@@ -1,7 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from './components/Card'
+import data from './data.js'
 
 function App() {
+
+  const [cardTime, setCardTime] = useState('Daily');
+
+  function changeTime() {
+
+  }
+
+  const cardList = data.map((item, index) =>
+    <Card 
+      key={index}
+      icon={item.icon}
+      title={item.title}
+      color={item.color}
+       />
+  )
+
+
   return (
     <div className='dashboard'>
       <div className='intro'>
@@ -19,12 +37,7 @@ function App() {
         </div>
       </div>
       <div className='cards'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cardList}
       </div>
     </div>
   )
