@@ -14,9 +14,9 @@ body {
 }
 
 .dashboard {
-  width: 80%;
+  width: 68%;
   height: 50%;
-  margin: 80px auto;
+  margin: 66px auto;
   display: grid;
   grid-template-columns: 200px 600px;
   grid-template-rows: 200px 200px;
@@ -48,7 +48,7 @@ body {
   margin-bottom: 30px;
 }
 
-.worker-photo+div {
+.worker-photo+div div {
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 5px;
@@ -108,7 +108,7 @@ button:hover {
 .card-icon {
   position: absolute;
   top: -5px;
-  left: 140px;
+  left: 70%;
   height: 48px;
   width: 48px;
 }
@@ -128,7 +128,7 @@ button:hover {
 }
 
 
-.card-details div {
+.card-details .options {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -145,6 +145,10 @@ button:hover {
   transform: scale(0.8);
 }
 
+.timeframes {
+  display: flex;
+  flex-direction: column;
+}
 
 .current-time {
   font-weight: 300;
@@ -156,4 +160,252 @@ button:hover {
 .previous-time {
   font-weight: 400;
   font-size: 11px;
+}
+
+
+
+
+/*tablet design*/
+@media only screen and ( min-width: 540px ) and ( max-width: 1050px) {
+  .dashboard {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .worker {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    gap: 20px;
+  }
+
+  .worker-photo {
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin-bottom: 0px;
+  }
+
+  .worker-photo+div div {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .worker-name {
+    font-size: 36px;
+  }
+
+  .report-tabs {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 250px);
+    gap: 35px;
+  }
+
+  .report-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .card-icon {
+    position: absolute;
+    top: -5px;
+    left: 75%;
+    height: 70px;
+    width: 70px;
+  }
+
+  .card-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    padding: 40px 50px;
+  }
+
+  .card-details div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  
+  .card-menu {
+    transform: scale(0.8);
+  }
+  
+  .timeframes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .current-time {
+    font-weight: 300;
+    margin: 0px;
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  
+  .previous-time {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .attribution { font-size: 14px; text-align: center; }
+}
+
+
+
+
+
+
+
+
+
+
+/*mobile design*/
+@media only screen and ( max-width: 540px) {
+  .dashboard {
+    width: 90%;
+    margin: 80px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .worker {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    gap: 20px;
+  }
+
+  .worker-photo {
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin-bottom: 0px;
+  }
+
+  .worker-photo+div div {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .worker-name {
+    font-size: 36px;
+  }
+
+  .report-tabs {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 250px);
+    gap: 35px;
+  }
+
+  .report-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .card-icon {
+    position: absolute;
+    top: -5px;
+    left: 75%;
+    height: 70px;
+    width: 70px;
+  }
+
+  .card-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    padding: 40px 50px;
+  }
+
+  .card-details div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  
+  .card-menu {
+    transform: scale(0.8);
+  }
+  
+  .timeframes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .current-time {
+    font-weight: 300;
+    margin: 0px;
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  
+  .previous-time {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
