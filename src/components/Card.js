@@ -6,7 +6,7 @@ function Card(props) {
         <img src={props.icon} className='card-icon'/>
         <div className='card-details'>
             <div className='options'>
-                <p className='card-title'>Work</p>
+                <p className='card-title'>{props.title}</p>
                 <img src='/images/icon-ellipsis.svg' className='card-menu' />
             </div>
             <div className='timeframes'>
