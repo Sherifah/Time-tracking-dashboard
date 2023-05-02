@@ -307,14 +307,14 @@ button:hover {
     height: 30%;
     display: flex;
     align-items: center;
-    padding: 40px 50px;
+    padding: 30px 30px;
     gap: 20px;
   }
 
   .worker-photo {
-    height: 100px;
-    width: 100px;
-    border: 5px solid white;
+    height: 80px;
+    width: 80px;
+    border: 4px solid white;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -322,16 +322,16 @@ button:hover {
   }
 
   .worker-photo+div div {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
 
   .worker-name {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .report-tabs {
-    padding: 40px 50px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: row;
     align-items: left;
@@ -371,7 +371,7 @@ button:hover {
     height: 200px;
     background-color: hsl(235, 46%, 20%);
     border-radius: 20px;
-    padding: 40px 50px;
+    padding: 30px 30px;
   }
 
   .card-details div {
