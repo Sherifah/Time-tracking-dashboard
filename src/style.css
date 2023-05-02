@@ -10,12 +10,12 @@ body {
   background-color: hsl(226, 43%, 10%);
   color: white;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .dashboard {
-  width: 68%;
-  height: 50%;
   margin: 66px auto;
   display: grid;
   grid-template-columns: 200px 600px;
@@ -169,7 +169,6 @@ button:hover {
 /*tablet design*/
 @media only screen and ( min-width: 540px ) and ( max-width: 1050px) {
   .dashboard {
-    width: 90%;
     margin: 80px auto;
     display: flex;
     flex-direction: column;
@@ -328,7 +327,7 @@ button:hover {
   }
 
   .worker-name {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .report-tabs {
@@ -402,7 +401,7 @@ button:hover {
     font-weight: 300;
     margin: 0px;
     line-height: 1.2;
-    font-size: 40px;
+    font-size: 36px;
   }
   
   .previous-time {

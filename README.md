@@ -46,24 +46,6 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 
 
-### What I learned
-
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 
 ### Continued development
